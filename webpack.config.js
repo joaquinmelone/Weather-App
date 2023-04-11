@@ -4,9 +4,12 @@ const path = require('path');
  module.exports = {
   mode: 'development',
    entry: {
-     index: './src/index.js'
+     index: './src/index.js',
    },
    devtool: 'inline-source-map',
+   devServer: {
+    static: './dist',
+  },
    plugins: [
      new HtmlWebpackPlugin({
       title: 'Development',
@@ -24,5 +27,8 @@ const path = require('path');
         use: ['style-loader', 'css-loader'],
       },
     ],
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
  };
