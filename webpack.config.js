@@ -1,10 +1,12 @@
 const path = require('path');
- const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
  module.exports = {
   mode: 'development',
    entry: {
      index: './src/index.js',
+     fetch: './src/fetch.js',
+     style: './src/style.css',
    },
    devtool: 'inline-source-map',
    devServer: {
@@ -12,7 +14,8 @@ const path = require('path');
   },
    plugins: [
      new HtmlWebpackPlugin({
-      title: 'Development',
+      title: 'Weather App',
+      template: './src/index.ejs'
      }),
    ],
    output: {
