@@ -1,9 +1,35 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Development</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"></head>
-  <body>
-  <script src="index.bundle.js"></script></body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <header>
+        <div class="search-country-container">
+            <div class="search-country-text">Search for the place you want the weather</div>
+            <div class="search-country-bar">
+                <form>
+                    <input type="text" required id="country-name">
+                    <button type="submit" id="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="countryname-weather-div"></div>
+
+            <div class="temperature-weather-div"></div>
+            <div class="feelslike-weather-div"></div>
+            <div class="humidity-weather-div"></div>
+        </div>
+    </main>
+<script src="runtime.bundle.js"></script><script src="index.bundle.js"></script><script src="fetch.bundle.js"></script><script src="style.bundle.js"></script></body>
 </html>
