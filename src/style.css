@@ -1,3 +1,116 @@
+/* GENERAL CSS PROPERTIES */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
 body {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    margin: 0;
+    height: 100%;
+    width: 100%;
+
+    word-wrap: break-word;
+    background-color: rgb(34, 37, 38);
+}
+
+/* SEARCH BAR */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    font-size: 50px;
+
+    height: 25%;
+    width: 100%;
+}
+
+.search-country-bar {
+    display: flex;
+
+    height: 55px;
+}
+
+.search-country-bar form {
+    display: flex;
+    width: 100%;
+}
+
+button {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+
+    width: 25%;
+}
+
+#country-name {
+    display: flex;
+    width: 100%;
+
+    font-size: 25px;
+}
+
+/* MAIN CONTENT */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    border: 5px solid black;
+
+    width: 35%;
+    height: 65%;
+}
+
+.main-content div {
+    display: flex;
+    flex-grow: 1;
+}
+
+.temperature-weather-div, .feelslike-weather-div, .humidity-weather-div {
+    font-size: 25px;
+}
+
+.countryname-weather-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 125px;
+
+    font-size: 55px;
+}
+
+/* Weather div properties */
+
+.weather-div {
+    font-size: 55px;
+    font-weight: bold;
 }
