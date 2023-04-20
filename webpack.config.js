@@ -6,6 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
    entry: {
      index: './src/index.js',
      fetch: './src/fetch.js',
+     weatherDivManipulation: './src/weatherDivManipulation.js',
      style: './src/style.css',
    },
    devtool: 'inline-source-map',
